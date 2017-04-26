@@ -769,7 +769,7 @@ extension FormViewController : UITableViewDelegate {
         return true
     }
 
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    open func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let row = form[indexPath]
             var section = row.section!
